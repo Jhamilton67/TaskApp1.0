@@ -5,6 +5,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>TaskApp1._0UI</RootNamespace>
+    <UserSecretsId>0a7da5e6-35a0-4834-a01c-9c58eb100641</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
