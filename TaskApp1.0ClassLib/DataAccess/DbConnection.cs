@@ -1,10 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 using MongoDB.Driver;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using TaskApp1._0ClassLib.DataAccess.Interfaces;
 using TaskApp1._0ClassLib.Models;
 
 namespace TaskApp1._0ClassLib.DataAccess
@@ -32,6 +28,7 @@ namespace TaskApp1._0ClassLib.DataAccess
             _Config = Config;
             client = new MongoClient(_Config.GetConnectionString(_connectionID));
             DBname = _Config["DatabaseName"];
+            _db = client.GetDatabase(DBname);
 
             CategoryCollection = _db.GetCollection<CatogeoryModel>(CategoryCollectionName);
             StatusCollection = _db.GetCollection<StatusModel>(StatusCollectionname);
@@ -39,8 +36,6 @@ namespace TaskApp1._0ClassLib.DataAccess
             SuggestionCollection = _db.GetCollection<SuggestionModel>(SuggestionCollectionname);
 
         }
-
-
 
 
     }

@@ -1,7 +1,7 @@
 ﻿using MongoDB.Driver;
 using TaskApp1._0ClassLib.Models;
 
-namespace TaskApp1._0ClassLib.DataAccess
+namespace TaskApp1._0ClassLib.DataAccess.Interfaces
 {
     public interface IDbConnection
     {
@@ -11,9 +11,13 @@ namespace TaskApp1._0ClassLib.DataAccess
         string DBname { get; }
         IMongoCollection<StatusModel> StatusCollection { get; }
         string StatusCollectionname { get; }
+
+       
+        IMongoCollection<UserModel> UserCollection { get; }
+
         IMongoCollection<SuggestionModel> SuggestionCollection { get; }
         string SuggestionCollectionname { get; }
-        IMongoCollection<UserModel> UserCollection { get; }
+
         string UserCollectionname { get; }
     }
 }

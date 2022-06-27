@@ -13,4 +13,8 @@
     <Folder Include="Models\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TaskApp1.0ClassLib\TaskApp1.0ClassLib.csproj" />
+  </ItemGroup>
+
 </Project>
