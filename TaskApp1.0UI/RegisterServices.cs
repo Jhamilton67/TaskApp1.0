@@ -10,7 +10,6 @@
             web.Services.AddMemoryCache();
         }
 
-
     }
 
 }

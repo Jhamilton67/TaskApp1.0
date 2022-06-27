@@ -9,10 +9,6 @@ namespace TaskApp1._0ClassLib.Models
         public string ID { get; set; }
         public string Title { get; set; }
 
-        public BasicSuggestionModel()
-        {
-
-        }
 
         public BasicSuggestionModel(SuggestionModel suggestion)
         {
